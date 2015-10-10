@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/item_round"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:padding="6dip" >
+
+        <ImageView
+            android:id="@+id/imgLogoEvento"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true" />
+
+
+
+        <TextView
+            style="@style/stlLetras"
+            android:id="@+id/txtvTituloEvento"
+            android:layout_below="@id/imgLogoEvento"
+            android:textStyle="bold"
+            android:text="hello"/>
+
+        <TextView
+            style="@style/stlLetras"
+            android:id="@+id/txtvFechaAux"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/txtvTituloEvento"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:text="@string/Fecha"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/stlLetras"
+            android:id="@+id/txtvFechaEvento"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/txtvTituloEvento"
+            android:layout_toRightOf="@id/txtvFechaAux"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:text="hello"
+            android:textColor="@color/gray"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>
